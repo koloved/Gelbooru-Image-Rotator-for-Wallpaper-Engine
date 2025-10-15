@@ -1,0 +1,150 @@
+{
+	"contentrating" : "Mature",
+	"description" : "Transform your desktop into a living art gallery that's always fresh and personalized. This wallpaper connects to the vast Gelbooru image database to deliver a stunning new image as often as you like, perfectly tailored to your tastes.\n    • Fully Customizable: Use search tags to find exactly what you want, exclude content you don't, and filter by rating (General, Questionable, Explicit).\n    • Perfect Fit for Your Screen: Intelligently finds and displays images that match your monitor’s aspect ratio for a clean, professional look.\n    • Beautiful & Interactive: Enjoy smooth, customizable transitions with a gorgeous blurred background effect. Instantly refresh the image or copy a link to the original art with simple on-screen buttons.\n    • Simple Setup: A quick, built-in guide will have you set up and ready to go in seconds.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"apikey" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Gelbooru API Key",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"aspectratio" : 
+			{
+				"fraction" : true,
+				"index" : 4,
+				"max" : 3,
+				"min" : 0,
+				"order" : 104,
+				"precision" : 0,
+				"text" : "Aspect Ratio (width/height, 0 = disabled)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"bluramount" : 
+			{
+				"index" : 8,
+				"max" : 100,
+				"min" : 0,
+				"order" : 108,
+				"precision" : 0,
+				"text" : "Background Blur Amount (px)",
+				"type" : "slider",
+				"value" : 30
+			},
+			"excludetags" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Exclude Tags",
+				"type" : "textinput",
+				"value" : "animated,censored"
+			},
+			"intervalminutes" : 
+			{
+				"index" : 6,
+				"max" : 60,
+				"min" : 1,
+				"order" : 106,
+				"precision" : 0,
+				"text" : "Change Interval (minutes)",
+				"type" : "slider",
+				"value" : 30
+			},
+			"limit" : 
+			{
+				"index" : 7,
+				"max" : 200,
+				"min" : 10,
+				"order" : 107,
+				"precision" : 0,
+				"text" : "Images Per Batch",
+				"type" : "slider",
+				"value" : 50
+			},
+			"rating" : 
+			{
+				"index" : 3,
+				"options" : 
+				[
+					{
+						"label" : "General (Safe for all)",
+						"value" : "general"
+					},
+					{
+						"label" : "Questionable (Suggestive)",
+						"value" : "questionable"
+					},
+					{
+						"label" : "Explicit (NSFW)",
+						"value" : "explicit"
+					}
+				],
+				"order" : 103,
+				"text" : "Rating Filter",
+				"type" : "combo",
+				"value" : "general"
+			},
+			"ratiotolerance" : 
+			{
+				"index" : 5,
+				"max" : 50,
+				"min" : 0,
+				"order" : 105,
+				"precision" : 0,
+				"text" : "Aspect Ratio Tolerance (%)",
+				"type" : "slider",
+				"value" : 20
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"showloading" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "Show Loading Indicator",
+				"type" : "bool",
+				"value" : true
+			},
+			"tags" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Search Tags",
+				"type" : "textinput",
+				"value" : "1girl,sort:random,width:>=1920,height:>=1080"
+			},
+			"transition" : 
+			{
+				"fraction" : true,
+				"index" : 9,
+				"max" : 3,
+				"min" : 0.3,
+				"order" : 109,
+				"precision" : 1,
+				"text" : "Transition Speed (seconds)",
+				"type" : "slider",
+				"value" : 2
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "adult",
+	"ratingviolence" : "included",
+	"tags" : [ "Anime" ],
+	"title" : "Gelbooru Image Rotator",
+	"type" : "web",
+	"version" : 1,
+	"workshopid" : "3587183034",
+	"workshopurl" : "steam://url/CommunityFilePage/3587183034"
+}

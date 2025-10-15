@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelbooru Wallpaper Rotator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Blurred background layer -->
+    <img id="background" src="" alt="">
+    <img id="next-background" src="" alt="">
+    
+    <!-- Frosted glass overlay (optional) -->
+    <div class="frosted-glass"></div>
+    
+    <!-- Sharp foreground image -->
+    <img id="wallpaper" src="" alt="">
+    <img id="next-wallpaper" src="" alt="">
+    
+    <!-- Control buttons -->
+    <div class="button-container">
+        <button id="update-btn" class="control-btn" title="Refresh Image">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+            </svg>
+        </button>
+        
+        <button id="source-btn" class="control-btn" title="Copy Gelbooru Link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Loading indicator -->
+    <div id="loading">Loading...</div>
+    
+    <!-- Clipboard notification -->
+    <div id="clipboard-notification">Link copied to clipboard!</div>
+    
+    <!-- API Setup Manual -->
+    <div id="api-manual" class="manual-overlay">
+        <div class="manual-content">
+            <div class="manual-header">
+                <h2>⚠️ API Key Required</h2>
+                <button id="close-manual" class="close-btn">&times;</button>
+            </div>
+            <div class="manual-body">
+                <p class="manual-intro">To use this wallpaper, you need to add your Gelbooru API key:</p>
+                
+                <ol class="manual-steps">
+                    <li>
+                        <strong>Login to Gelbooru</strong>
+                        <p>Visit <a href="https://gelbooru.com" target="_blank">gelbooru.com</a> and login to your account</p>
+                    </li>
+                    <li>
+                        <strong>Open Account Options</strong>
+                        <p>Go to: <a href="https://gelbooru.com/index.php?page=account&s=options" target="_blank">Settings → Options</a></p>
+                    </li>
+                    <li>
+                        <strong>Find Your API Key</strong>
+                        <p>Scroll down the page to find your API key and User ID</p>
+                    </li>
+                    <li>
+                        <strong>Copy the Full String</strong>
+                        <p>Copy the entire string in this format:<br>
+                        <code>&api_key=YOUR_KEY&user_id=YOUR_ID</code></p>
+                    </li>
+                    <li>
+                        <strong>Add to Wallpaper Engine</strong>
+                        <p>Paste the string into the field<strong>"Gelbooru API Key"</strong></p>
+                    </li>
+                </ol>
+                
+                <div class="manual-footer">
+                    <p class="manual-note">💡 <strong>Note:</strong> Without an API key, the wallpaper may not load images or be rate-limited by Gelbooru.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
